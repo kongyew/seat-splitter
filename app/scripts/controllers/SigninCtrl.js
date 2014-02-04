@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('seatsplitterApp')
-  .controller('ShowCaseCtrl', function ($scope) {
+  .controller('SigninCtrl', function ($scope) {
     $scope.awesomeThings = [
       'Description',
       'AngularJS',

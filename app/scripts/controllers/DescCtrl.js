@@ -1,9 +1,9 @@
 'use strict';
 
 angular.module('seatsplitterApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('DescCtrl', function ($scope) {
     $scope.awesomeThings = [
-      'HTML5 Boilerplate',
+      'Description',
       'AngularJS',
       'Karma'
     ];
