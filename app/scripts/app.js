@@ -8,8 +8,12 @@ var app = angular.module('seatsplitterApp', [
   'mgcrea.ngStrap.aside',
   'mgcrea.ngStrap.tooltip',
   'mgcrea.ngStrap.navbar',
-  'facebook'
-])
+  'mgcrea.ngStrap.select',
+  'facebook',
+  'google-maps'
+
+
+    ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/main', {
@@ -41,6 +45,11 @@ var app = angular.module('seatsplitterApp', [
         .when('/user/signin', {
             templateUrl: 'views/signin.html',
             controller: 'SigninCtrl'
+        })
+
+        .when('/findflight', {
+            templateUrl: 'views/findflight.html',
+            controller: 'FindFlightCtrl'
         })
       .otherwise({
         redirectTo: '/'

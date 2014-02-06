@@ -31,7 +31,7 @@
   </head>
   <body ng-app="seatsplitterApp" data-spy="scroll" data-offset="0" data-target="#navigation">
     <!-- Fixed navbar -->
-	    <div id="navigation" class="navbar navbar-default navbar-fixed-top" bs-navbar>
+	    <div id="navigation" class="navbar navbar-default navbar-fixed-top" bs-navbar data-ng-controller="AuthenticationController">
 	      <div class="container-fluid">
 	        <div class="navbar-header">
 	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -45,7 +45,11 @@
                 <ul class="nav navbar-nav">
                     <li data-match-route="/?(navbar)?" class="smothscroll"><a href="#/">Home</a></li>
                     <li data-match-route="/desc" class="smothscroll"><a href="#/desc">Features</a></li>
-                    <li data-match-route="/showcase.*" class="smothscroll"><a href="#/showcase">Showcase</a></li>
+                    <li data-match-route="/findflight" class="smothscroll"><a href="#/findflight">Find Flight</a></li>
+
+                    <!--
+                    <li data-match-route="/showcase" class="smothscroll"><a href="#/showcase">Showcase</a></li>
+                    -->
                     <li data-match-route="/contact" class="smothscroll"><a href="#/contact">Contact</a></li>
 
                 </ul>
@@ -142,7 +146,11 @@
         <script src="bower_components/angular-route/angular-route.js"></script>
         <script src="bower_components/angular-strap/dist/angular-strap.min.js"></script>
         <script src="bower_components/angular-strap/dist/angular-strap.tpl.min.js"></script>
-        <!-- endbuild -->
+        <script src='http://maps.googleapis.com/maps/api/js?sensor=false'></script>
+        <script src='bower_components/underscore/underscore-min.js'></script>
+        <script src='bower_components/angular-google-maps/dist/angular-google-maps.min.js'></script>
+
+    <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
@@ -150,6 +158,7 @@
         <script src="scripts/controllers/DescCtrl.js"></script>
         <script src="scripts/controllers/HomeCtrl.js"></script>
         <script src="scripts/controllers/ShowCaseCtrl.js"></script>
+        <script src="scripts/controllers/FindFlightCtrl.js"></script>
 
 
 
