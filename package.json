@@ -1,7 +1,10 @@
 {
   "name": "seatsplitter",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+      "express": "latest",
+      "prerender-node": "latest"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-autoprefixer": "~0.4.0",

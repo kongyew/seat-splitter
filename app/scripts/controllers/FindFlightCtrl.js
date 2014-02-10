@@ -5,7 +5,7 @@ angular.module('seatsplitterApp')
 
 // http://mgcrea.github.io/angular-strap/##selects
     $scope.selectedIcon = "";
-    $scope.selectedIcons = "["Globe","Heart"]";
+   // $scope.selectedIcons = "["Globe","Heart"]";
 
 
     $scope.map = {
